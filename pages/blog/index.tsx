@@ -33,7 +33,7 @@ export default function CompName(props: { ranch: any }) {
 // get serverside props
 
 export async function getServerSideProps() {
-  const res = await fetch("http://localhost:3000/api/get_blogs");
+  const res = await fetch("http://localhost:80/api/get_blogs");
   const data = await res.json();
 
   //   console.log(data);
