@@ -45,12 +45,7 @@ export default function Home() {
               >
                 <button className="">Portfolio</button>
               </Link>
-              <Link
-                href="/blog"
-                className="portfolio_buttons lg:col-span-1 lg:col-start-2 text-center"
-              >
-                <button>Blog</button>
-              </Link>
+
               <Link
                 href="/skills"
                 className="portfolio_buttons lg:col-span-1 lg:col-start-2  text-center"
