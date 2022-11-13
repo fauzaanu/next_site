@@ -38,7 +38,7 @@ export default function Home() {
             </div>
             {/* Navigation buttons for portfolio blog and Skills */}
 
-            <div className="grid grid-cols-3 gap-4">
+            <div className="grid grid-cols-2 lg:grid-cols-3 gap-4">
               <Link
                 href="/portfolio"
                 className="portfolio_buttons lg:col-span-1 lg:col-start-2 text-center "
