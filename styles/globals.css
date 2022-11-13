@@ -1,26 +1,90 @@
-html,
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+img {
+  @apply rounded w-auto h-auto;
+}
+
 body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  @apply bg-gradient-to-br from-blue-600 to-emerald-600 scroll-smooth select-none m-7;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+.about {
+  @apply bg-white text-white bg-opacity-20 p-8 rounded-xl space-y-4 shadow-lg;
 }
 
-* {
-  box-sizing: border-box;
+.contact_button {
+  @apply bg-gradient-to-bl text-white font-bold from-red-500 to-red-800 p-2 rounded bg-opacity-20;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+.portfolio_buttons {
+  @apply bg-white p-2 rounded text-black text-xl shadow-lg;
+}
+
+.telegram_titles {
+  @apply text-white text-2xl py-5;
+}
+
+.tg_content {
+  @apply text-white text-opacity-50 mb-4;
+}
+
+.warn {
+  @apply text-black/50 bg-yellow-400 p-1 rounded;
+}
+
+.telegram_card {
+  @apply bg-white bg-opacity-20 mt-4 p-4 rounded-xl shadow-lg items-end;
+}
+
+.tg_status {
+  @apply my-2;
+}
+
+.tg_active {
+  @apply bg-green-500 text-white p-2 rounded;
+}
+
+.tg_inactive {
+  @apply bg-red-500 text-white p-2 rounded;
+}
+
+.tg_problem {
+  @apply bg-red-600 text-white p-4 rounded bg-opacity-80 mt-4;
+}
+
+.tg_solution {
+  @apply bg-green-600 text-white p-4 mt-1 rounded bg-opacity-80;
+}
+
+.cms_form {
+  @apply bg-white bg-opacity-20 p-4 rounded shadow-lg grid grid-cols-1;
+}
+
+.blog_card {
+  @apply bg-white bg-opacity-20 p-4 rounded shadow-lg space-y-4 m-3 col-span-12 lg:col-start-4 lg:col-span-6;
+}
+
+.blog_title {
+  @apply text-white text-3xl;
+}
+.blog_description {
+  @apply text-white text-opacity-50;
+}
+
+form {
+  @apply text-white;
+}
+
+.form_input {
+  @apply bg-white bg-opacity-20 p-2 rounded shadow-lg my-2 outline-none;
+}
+
+.form_input_d {
+  @apply bg-white bg-opacity-20 p-2 rounded shadow-lg w-full my-2 outline-none;
+}
+
+.form_button {
+  @apply outline-none bg-gradient-to-bl text-white font-bold from-red-500 to-red-800 p-2 rounded;
 }
