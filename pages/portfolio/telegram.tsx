@@ -18,7 +18,7 @@ export default function Telegram() {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 gap-3 md:grid-cols-3 lg:grid-cols-4">
+        <div className="grid grid-cols-1 gap-3 md:grid-cols-2 xl:grid-cols-3">
           <div className="telegram_card  ">
             <div className="telegram_titles">DHIVEHI SHOP</div>
             <p className="tg_status">
@@ -82,7 +82,8 @@ export default function Telegram() {
             </p>
             <p className="tg_solution">
               This bot will help you to watch tiktok and youtube videos directly
-              from telegram.
+              from telegram. The tiktokBot also removes the watermark from the
+              video.
             </p>
           </div>
 
@@ -92,8 +93,8 @@ export default function Telegram() {
               <span className="tg_active">Status: Active</span>
             </p>
             <p className="tg_problem">
-              Saw that no one has made a radheefbot on telegram so i decided to
-              make one as my very first inline bot.
+              Was surprised that @radheefbot was an empty handle on Telegram
+              Bots platform. So I decided to move in.
             </p>
             <p className="tg_solution">
               @RadheefBot has a lot to improve and is opensource if anyone wants
@@ -107,8 +108,8 @@ export default function Telegram() {
               <span className="tg_active">Status: Active</span>
             </p>
             <p className="tg_problem">
-              GPT-3 was super interesting, @Engeybot is the interface used by me
-              and my friends to play with GPT-3 from OpenAI.
+              GPT-3 by OpenAI was super interesting, @Engeybot is the interface
+              used by me and my friends to play with GPT-3 from OpenAI.
             </p>
             <p className="tg_solution">
               It has been an absolute help when we need understand something
@@ -163,7 +164,7 @@ export default function Telegram() {
             </p>
             <p className="tg_solution">
               Eventhough it is not a complete solution, it is still a good
-              solution for an active torrent user which I am not. So the bot is
+              solution for an active torrent user which I am not. The bot is
               down as it requires some heavy maintenance.
             </p>
           </div>

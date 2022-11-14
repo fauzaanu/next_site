@@ -15,14 +15,14 @@ export default function SMM() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div className="fixed bottom-0 right-0">
-        <div className="grid lg:grid-cols-3">
-          <div className="aboutf col-start-1 lg:col-start-2">
+      <div className="fixed bottom-0 left-0">
+        <div className="grid grid-cols-1">
+          <div className="aboutf col-start-1 w-screen">
             <p>
-              Social Media Marketing is not a full marketing solution, but it is
-              a great way to get your brand out there and get people talking
-              about it. I have helped many businesses grow their social media
-              presence and get more customers. I can help you too.
+              My services are more curated towards businesses who have the
+              propduct photography done but needs a designer to make them
+              engaging social media posts. However, a custom solution can always
+              be provided.
             </p>
             {/* Lets place some really awersome buttons */}
             <div className="flex flex-row space-x-4">

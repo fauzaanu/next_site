@@ -4,8 +4,8 @@ export default function CompName() {
   return (
     <div className="h-min bg-repeat-x">
       <BackToPortFolio link="/" text="" />
-      <div className="">
-        <div className="mt-10 md:mt-10">
+      <div className="lg:grid lg:grid-cols-12">
+        <div className="mt-10 md:mt-10 lg:col-start-3 lg:col-span-8">
           <h2 className="mt-20 md:mt-10 text-white/80 text-2xl md:text-xl lg:mt-32">
             Graphics Design Skills
           </h2>
@@ -113,7 +113,8 @@ export default function CompName() {
           <div className="text-xl bg-gray-400/50 w-fit p-5 text-white/50 rounded mt-5 space-y-3">
             <p>
               Using MQL4 I have made countless Trading Robots and indicators for
-              the Metatrader 4 Platform.
+              the Metatrader 4 Platform. My most notable project is Stalk-Board
+              (discontinued).
             </p>
           </div>
 

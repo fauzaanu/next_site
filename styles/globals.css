@@ -15,7 +15,7 @@ body {
 }
 
 .aboutf {
-  @apply bg-white text-black bg-opacity-50 p-8 border-t-2 rounded-t-md shadow-black border-t-red-500 backdrop-blur-lg space-y-4 shadow-lg m-0;
+  @apply bg-white text-black bg-opacity-50 p-8 border-t-2 rounded-t-md border-t-red-500 backdrop-blur-lg space-y-4  m-0;
 }
 
 .contact_button {
