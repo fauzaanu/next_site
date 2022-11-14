@@ -43,7 +43,7 @@ export default function Telegram() {
         </div>
       </div>
 
-      <main className="p-8">
+      <main className="p-8 h-screen">
         <div className="grid lg:grid-cols-3">
           <div className="about col-start-1 lg:col-start-2">
             <p className="the_header">
