@@ -1,34 +1,93 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Personal Portfolio Website Made Using NextJS
 
-## Getting Started
+> Also first NextJS Project
 
-First, run the development server:
+> Also my very first interaction with NGINX
 
-```bash
-npm run dev
-# or
-yarn dev
+## Deployment
+
+- First deployed on vercel but to get some NGINX experience it is currently on a Digital Ocean Droplet
+- SSL seemed so hard to setup when I was doing Django but it seems very simple
+
+## Deployment Process
+
+1. Make a droplet
+2. Install nodejs, npm, nginx, snap, certbot
+
+```
+sudo apt install npm
+sudo apt install nodejs
+sudo apt install nginx
+sudo snap install core; sudo snap refresh core
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+## If snap is not already installed:
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+```
+sudo apt install snapd
+```
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+and then run the snap specefic command:
 
-## Learn More
+```
+sudo snap install core; sudo snap refresh core
+```
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+3. git clone the repo
+4. cd to the directory
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+```
+npm run build
+```
 
-## Deploy on Vercel
+5. Edit nginx config file (name does not matter)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```
+vim /etc/nginx/conf.d/your-site.conf
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+6. The config file should be this
+
+```config
+server {
+    server_name fauzaanu.com; #site address
+location / {
+        proxy_pass http://127.0.0.1:3000;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto $scheme;
+    }
+```
+
+7. install process manager for node
+
+```
+npm i -g pm2
+```
+
+8. Handle SSL Certificate Stuff
+
+```
+sudo snap install --classic certbot
+sudo ln -s /snap/bin/certbot /usr/bin/certbot
+sudo certbot --nginx
+```
+
+9. After certbot stuff done:
+
+```
+systemctl restart nginx
+```
+
+9. Start pm2 process i guess: (not sure why I need this yet: or do I?)
+
+```
+pm2 start npm --name "next" -- start
+```
+
+10. Hope it works
