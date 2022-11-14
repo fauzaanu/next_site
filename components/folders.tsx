@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function FolderButton(props: { name: string }) {
   return (
-    <div className="portfolio_buttons">
+    <div className=" bg-white p-2 rounded text-black text-xl shadow-nd shadow-black/50">
       <button className="flex gap-3">
         <svg
           xmlns="http://www.w3.org/2000/svg"

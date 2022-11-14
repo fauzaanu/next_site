@@ -11,7 +11,7 @@ export default function Telegram() {
       <main className="p-8">
         <div className="grid lg:grid-cols-3">
           <div className="about col-start-1 lg:col-start-2">
-            <p className="tg_content">
+            <p className="the_header">
               I have been developing for the Telegram platform since 2017.
               Telegram is my favourite chat platform from a long time.
             </p>
@@ -91,13 +91,13 @@ export default function Telegram() {
             <p className="tg_status">
               <span className="tg_active">Status: Active</span>
             </p>
-            <p className="tg_content">
-              This is a live inlinebot that you could use even now.
+            <p className="tg_problem">
+              Saw that no one has made a radheefbot on telegram so i decided to
+              make one as my very first inline bot.
             </p>
-            <p className="tg_content">
-              Just type @RadheefBot in any chat and write a dhivehi word to get
-              the related words from Radheef. When you click a result you will
-              get the detailed meaning of the word.
+            <p className="tg_solution">
+              @RadheefBot has a lot to improve and is opensource if anyone wants
+              to contribute and make it better.
             </p>
           </div>
 
@@ -106,11 +106,13 @@ export default function Telegram() {
             <p className="tg_status">
               <span className="tg_active">Status: Active</span>
             </p>
-            <p className="tg_content">
-              This is an AI Based Bot made using OpenAI GPT-3
+            <p className="tg_problem">
+              GPT-3 was super interesting, @Engeybot is the interface used by me
+              and my friends to play with GPT-3 from OpenAI.
             </p>
-            <p className="tg_content">
-              You could ask it anything and it will try to answer you.
+            <p className="tg_solution">
+              It has been an absolute help when we need understand something
+              without going back to google.
             </p>
           </div>
 
@@ -119,14 +121,16 @@ export default function Telegram() {
             <p className="tg_status">
               <span className="tg_inactive">Status: Inactive</span>
             </p>
-            <p className="tg_content">
-              This is a tool made to download every video in a youtube channel
-              and send them to Telegram as streamable media. The process takes a
-              while and a Telegram useraccount is needed for this process.
+            <p className="tg_problem">
+              Telegram somehow offers unlimited cloud storage for anything. The
+              idea came from the fact that youtube can take down content that
+              does not follow their guidelines. But telegram could be a backup
+              for youtube videos while they are up (before they are taken down)
             </p>
-            <p className="tg_content">
-              Check out @dhivehidharus a complete Backup of Dharus Library from
-              youtube
+            <p className="tg_solution">
+              This tool is yet to be improved enough to be used by the public.
+              But you can Check out @dhivehidharus a complete Backup of Dharus
+              Library from youtube.
             </p>
           </div>
 
@@ -135,9 +139,14 @@ export default function Telegram() {
             <p className="tg_status">
               <span className="tg_active">Status: Active</span>
             </p>
-            <p className="tg_content">
-              A bot to send you how many players are on a steam game server and
-              their durations
+            <p className="tg_problem">
+              Steam requires you to join a gameserver to know how many players
+              are playing as a general rule. (or join the game atleast)
+            </p>
+            <p className="tg_solution">
+              My gaming tastes are a lot different from normal people who want
+              to PVP all day. So I wrote this bot to find when the server is
+              least active. You can see a demo of this on @rustmalaysia
             </p>
           </div>
 
@@ -146,10 +155,16 @@ export default function Telegram() {
             <p className="tg_status">
               <span className="tg_inactive">Status: Inactive</span>
             </p>
-            <p className="tg_content">
-              This bot generates the direct download link for a given torrent
-              file when a magnet url is sent. It also has the ability to search
-              for torrents.
+            <p className="tg_problem">
+              After making YTBackups it was a dream to make a torrent download +
+              Backup via telegram. Had many challanges and it was not possible
+              due to a lot of factors. But I ended up with this bot that
+              generates a direct download link from a magnet URL
+            </p>
+            <p className="tg_solution">
+              Eventhough it is not a complete solution, it is still a good
+              solution for an active torrent user which I am not. So the bot is
+              down as it requires some heavy maintenance.
             </p>
           </div>
         </div>

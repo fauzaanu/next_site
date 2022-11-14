@@ -15,18 +15,25 @@ export default function SMM() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="p-8">
+      <div className="fixed bottom-0 right-0">
         <div className="grid lg:grid-cols-3">
-          <div className="about col-start-1 lg:col-start-2">
+          <div className="aboutf col-start-1 lg:col-start-2">
             <p>
-              My ads are fast, effective, and affordable. They can be made to
-              fit in with any requirement your business have. Note that, I do
-              not provide a photography service, so the product images must be
-              provided by you.
+              Social Media Marketing is not a full marketing solution, but it is
+              a great way to get your brand out there and get people talking
+              about it. I have helped many businesses grow their social media
+              presence and get more customers. I can help you too.
             </p>
+            {/* Lets place some really awersome buttons */}
+            <div className="flex flex-row space-x-4">
+              <button className="contact_button">
+                <a href="tg://resolve?domain=fauzaanu">GET IN TOUCH</a>
+              </button>
+            </div>
           </div>
         </div>
-
+      </div>
+      <main className="p-8">
         <div className="text-3xl text-yellow-400 font-bold pt-10 col-start-1  pb-10 mx-auto">
           SOCIAL MEDIA POSTS
         </div>

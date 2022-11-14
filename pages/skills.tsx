@@ -5,7 +5,7 @@ export default function CompName() {
     <div className="h-min bg-repeat-x">
       <BackToPortFolio link="/" text="" />
       <div className="">
-        <div className="mt-10 md:mt-10 ml-20 mr-20">
+        <div className="mt-10 md:mt-10">
           <h2 className="mt-20 md:mt-10 text-white/80 text-2xl md:text-xl lg:mt-32">
             Graphics Design Skills
           </h2>
@@ -17,7 +17,7 @@ export default function CompName() {
               .ps
             </div>
           </div>
-          <div className="text-xl bg-gray-400/50 w-fit p-5 text-black/50 rounded mt-5 space-y-3">
+          <div className="text-xl bg-gray-400/50 w-fit p-5 text-white/50 rounded mt-5 space-y-3">
             <p>
               Apart from 3D, I&apos;m quite familiar with all the features of
               Adobe Illustrator and Photoshop.
@@ -53,7 +53,7 @@ export default function CompName() {
               .css
             </div>
           </div>
-          <div className="text-xl bg-gray-400/50 w-fit p-5 text-black/50 rounded mt-5 space-y-3">
+          <div className="text-xl bg-gray-400/50 w-fit p-5 text-white/50 rounded mt-5 space-y-3">
             <p>
               Wrote my first HTML while I was in grade 8 (2011). From that time
               I have been in touch with a variety of different web technologies.
@@ -77,7 +77,7 @@ export default function CompName() {
               XPath
             </div>
           </div>
-          <div className="text-xl bg-gray-400/50 w-fit p-5 text-black/50 rounded mt-5 space-y-3">
+          <div className="text-xl bg-gray-400/50 w-fit p-5 text-white/50 rounded mt-5 space-y-3">
             <p>
               Even though Xpath and Regex are not much used in Web development,
               they come extremely handy in webautomation and data extraction.
@@ -110,7 +110,7 @@ export default function CompName() {
               Flutter
             </div>
           </div>
-          <div className="text-xl bg-gray-400/50 w-fit p-5 text-black/50 rounded mt-5 space-y-3">
+          <div className="text-xl bg-gray-400/50 w-fit p-5 text-white/50 rounded mt-5 space-y-3">
             <p>
               Using MQL4 I have made countless Trading Robots and indicators for
               the Metatrader 4 Platform.
@@ -140,7 +140,7 @@ export default function CompName() {
               Wordpress
             </div>
           </div>
-          <div className="text-xl bg-gray-400/50 w-fit p-5 text-black/50 rounded mt-5 space-y-3">
+          <div className="text-xl bg-gray-400/50 w-fit p-5 text-white/50 rounded mt-5 space-y-3">
             <p>
               I manage a lot of bots on telegram. I can make one in under an
               hour if the logic is simple.
