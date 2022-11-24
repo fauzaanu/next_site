@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
+import Logo from "../components/logo";
 
 export default function Home() {
   return (
@@ -15,18 +16,20 @@ export default function Home() {
       </Head>
 
       <main className="telegram">
-        <div className="p-10 min-h-screen text-xl">
+        <div className="min-h-screen text-xl">
           <div className="text-white col-start-2 space-y-4">
-            <div className="grid lg:grid-cols-3">
-              <div className="about col-start-2">
+            <div className="grid grid-cols-1 lg:grid-cols-3">
+              <div className="about md:col-start-1 lg:col-start-2">
+                <Logo />
                 <p>I&apos;m Fauzaan.</p>
+                <p>I&apos;m into Design, Code, and Automation.</p>
                 <p>
-                  I create Telegram bots, Automation Scripts, Websites, Apps,
-                  Social Meda Ads and much more.
+                  To fully understand the scope of my work please check out my
+                  portfolio.
                 </p>
                 <p>
-                  If you want to work together on a project, or just have a chat
-                  feel free to . . .
+                  If you would like to work together on a project, or to have a
+                  chat, feel free to . . .{" "}
                 </p>
                 {/* Lets place some really awersome buttons */}
                 <div className="flex flex-row space-x-4">

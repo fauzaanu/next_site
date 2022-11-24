@@ -6,8 +6,12 @@ img {
   @apply rounded w-auto h-auto;
 }
 
+html {
+  @apply bg-gradient-to-br from-blue-600 to-emerald-600 scroll-smooth select-none;
+}
+
 body {
-  @apply bg-gradient-to-br from-blue-600 to-emerald-600 scroll-smooth select-none m-7;
+  @apply m-7;
 }
 
 .about {
@@ -95,4 +99,46 @@ form {
 
 .form_button {
   @apply outline-none bg-gradient-to-bl text-white font-bold from-red-500 to-red-800 p-2 rounded;
+}
+
+#svg-animation SVG {
+  @apply text-white w-52;
+}
+
+@-webkit-keyframes animate-svg-stroke-1 {
+  0% {
+    stroke-dashoffset: 2057.10009765625px;
+    stroke-dasharray: 2057.10009765625px;
+  }
+
+  100% {
+    stroke-dashoffset: 4114.2001953125px;
+    stroke-dasharray: 2057.10009765625px;
+  }
+}
+
+@keyframes animate-svg-stroke-1 {
+  0% {
+    stroke-dashoffset: 2057.10009765625px;
+    stroke-dasharray: 2057.10009765625px;
+  }
+
+  100% {
+    stroke-dashoffset: 4114.2001953125px;
+    stroke-dasharray: 2057.10009765625px;
+  }
+}
+
+/* #svg-animation {
+  -webkit-animation: animate-svg-stroke-2 5.5s both infinite;
+  animation: animate-svg-stroke-2 5.5s both infinite;
+} */
+
+#svg-animation svg {
+  -webkit-animation: animate-svg-stroke-1 5.5s both infinite;
+  animation: animate-svg-stroke-1 5.5s both infinite;
+}
+
+#svg-animation {
+  @apply animate-none;
 }

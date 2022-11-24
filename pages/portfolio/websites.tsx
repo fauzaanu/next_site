@@ -5,43 +5,9 @@ import { useState } from "react";
 import BackToPortFolio from "../../components/backtoportfolio";
 
 export default function Telegram() {
-  const [position, setPosition] = useState("bottom");
-  // add an event listener for scroll position
-  if (typeof window !== "undefined") {
-    window.addEventListener("scroll", () => {
-      // if the scroll bar is at bottom, set the position to top
-      if (
-        window.innerHeight + document.documentElement.scrollTop ===
-        document.documentElement.offsetHeight
-      ) {
-        setPosition("top");
-      } else {
-        setPosition("bottom");
-      }
-    });
-  }
-
   return (
     <div>
       <BackToPortFolio link="/portfolio" text="" />
-
-      <div className={`fixed left-0 ${position}-0`}>
-        <div className="grid grid-cols-1">
-          <div className="aboutf col-start-1 w-screen">
-            <p>
-              A working website with ecommerce functionality can be made within
-              a day. I also make custom made websites specefic to your needs. To
-              discuss your projects / ideas feel free to get in touch.
-            </p>
-            {/* Lets place some really awersome buttons */}
-            <div className="flex flex-row space-x-4">
-              <button className="contact_button">
-                <a href="tg://resolve?domain=fauzaanu">GET IN TOUCH</a>
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
 
       <main className="p-8 h-screen">
         <div className="grid lg:grid-cols-3">

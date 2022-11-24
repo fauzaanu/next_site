@@ -15,25 +15,7 @@ export default function SMM() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div className="fixed bottom-0 left-0">
-        <div className="grid grid-cols-1">
-          <div className="aboutf col-start-1 w-screen">
-            <p>
-              My services are more curated towards businesses who have the
-              propduct photography done but needs a designer to make them
-              engaging social media posts. However, a custom solution can always
-              be provided.
-            </p>
-            {/* Lets place some really awersome buttons */}
-            <div className="flex flex-row space-x-4">
-              <button className="contact_button">
-                <a href="tg://resolve?domain=fauzaanu">GET IN TOUCH</a>
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <main className="p-8">
+      <main className="">
         <div className="text-3xl text-yellow-400 font-bold pt-10 col-start-1  pb-10 mx-auto">
           SOCIAL MEDIA POSTS
         </div>
